@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body{
+	font-family: "Inter", sans-serif;
+	font-weight: 500;
+}
+.img-custom {
+	width: 100%; /* Gambar akan memenuhi 100% lebar kontainer */
+      max-width: 310px; /* Ukuran maksimum gambar */
+      height: auto;
+      margin-top: 25px;
+}
+.navbar-nav {
+      position: relative;
+    }
+
+    .navbar-nav .nav-link {
+      text-decoration: none;
+      padding-bottom: 10px; /* Memberikan ruang agar garis lebih jelas terlihat */
+    }
+
+    /* Garis horizontal */
+    .navbar-nav hr {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: #007bff; /* Warna garis */
+      border: none;
+      transition: width 0.3s ease, left 0.3s ease;
+    }
+    /* Menambahkan efek underline ketika link aktif */
+.navbar-nav .nav-link.active {
+      font-weight: bold;
+      color: orange;
+ }
+ .custom-text {
+ 	text-decoration: none;
+ 	color: orange;
+ 	font-weight: 200px;
+ }
+  /* Membuat container untuk ikon-ikon sejajar */
+    .icon-container {
+      display: flex;
+      justify-content: left; /* Menyelaraskan ikon secara horizontal di tengah */
+      align-items: center;     /* Menyelaraskan ikon secara vertikal */
+      gap: 20px;               /* Memberi jarak antar ikon */
+    }
+
+    .icon-container i {
+      display: inline-block;
+      font-size: 18px; /* Ukuran ikon */
+      background-color: orange; /* Warna latar belakang merah */
+      color: none; /* Warna ikon */
+      padding: 5px; /* Memberikan ruang di sekitar ikon */
+      border-radius: 50%; /* Membuat bentuk melingkar */
+      transition: background-color 0.3s ease; /* Animasi perubahan warna */
+    }
+    /* Efek hover (opsional) untuk perubahan warna latar belakang */
+    .icon-container i:hover {
+      background-color: white;
+    }
+    @media (max-width: 768px) {
+    	.icon-container {
+    		justify-content: center
+    	}
+    }
